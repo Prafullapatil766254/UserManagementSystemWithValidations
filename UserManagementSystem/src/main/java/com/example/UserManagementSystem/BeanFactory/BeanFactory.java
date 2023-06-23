@@ -14,4 +14,6 @@ public class BeanFactory {
     public List<User> getListOfUser(){
         return new ArrayList<User>();
     }
+
+
 }

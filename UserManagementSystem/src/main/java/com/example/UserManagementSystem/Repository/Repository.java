@@ -15,4 +15,9 @@ public class Repository {
     public List<User> getListOfUsers() {
         return users;
     }
+
+    public void delete(User user){
+       users.remove(user);
+    }
+
 }

@@ -49,12 +49,14 @@ public class Service {
     }
 
     public String deleteUser(Integer userId) {
-        List<User> users = repository.getListOfUsers();
-        for(User user : users){
+
+        for(User user : repository.getListOfUsers()){
+
             if(user.getUserId().equals(userId)){
-                users.remove();
+                repository.delete(user);
                 break;
             }
+
         }
         return "User removed successfully..";
     }

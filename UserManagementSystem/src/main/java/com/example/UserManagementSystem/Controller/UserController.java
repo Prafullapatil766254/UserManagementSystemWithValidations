@@ -13,7 +13,7 @@ public class UserController {
     @Autowired
     Service service;
 
-    @PostMapping(" ")
+    @PostMapping("user")
     public String addUser(@RequestBody User user){
         return service.addUser(user);
     }
@@ -27,13 +27,13 @@ public class UserController {
         return service.getAllUsers();
    }
 
-   @PutMapping("user")
+   @PutMapping("87")
    public String updateUserInfo(@RequestBody User user){
         return service.updateUserInfo(user);
    }
 
    @DeleteMapping("user/{userId}")
-   public String deleteUser(Integer userId){
+   public String deleteUser(@PathVariable Integer userId){
      return service.deleteUser(userId);
    }
 }
