@@ -27,7 +27,7 @@ public class UserController {
         return service.getAllUsers();
    }
 
-   @PutMapping("87")
+   @PutMapping("user")
    public String updateUserInfo(@RequestBody User user){
         return service.updateUserInfo(user);
    }
