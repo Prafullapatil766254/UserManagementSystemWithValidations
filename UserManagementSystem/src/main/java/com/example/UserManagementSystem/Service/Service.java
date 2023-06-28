@@ -35,17 +35,15 @@ public class Service {
         return users;
     }
 
-    public String updateUserInfo(User user) {
+    public String updateUserInfoById(Integer id , String phoneNo) {
         List<User> users = repository.getListOfUsers();
 
-        for(User presentUser : users){
-            if(presentUser.getUserId().equals(user.getUserId())){
-                users.remove(presentUser);
-                users.add(user);
-                break;
-            }
-        }
-        return "User Updated Successfully..";
+       for(User user : users){
+           if(user.getUserId().equals(id)){
+               user.setPhoneNo(phoneNo);
+           }
+       }
+        return "User Phone No Updated Successfully..";
     }
 
     public String deleteUser(Integer userId) {
@@ -53,7 +51,7 @@ public class Service {
         for(User user : repository.getListOfUsers()){
 
             if(user.getUserId().equals(userId)){
-                repository.delete(user);
+                repository.getListOfUsers().remove(user);
                 break;
             }
 

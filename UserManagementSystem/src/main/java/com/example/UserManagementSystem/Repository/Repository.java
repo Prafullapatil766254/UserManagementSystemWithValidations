@@ -16,8 +16,6 @@ public class Repository {
         return users;
     }
 
-    public void delete(User user){
-       users.remove(user);
-    }
+
 
 }

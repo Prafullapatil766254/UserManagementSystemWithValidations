@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UserManagementSystem.iml" filepath="$PROJECT_DIR$/.idea/UserManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserManagementSystem/UserManagementSystem.iml" filepath="$PROJECT_DIR$/UserManagementSystem/UserManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UserManagementSystemWithValidations.iml" filepath="$PROJECT_DIR$/.idea/UserManagementSystemWithValidations.iml" />
     </modules>
   </component>
 </project>
