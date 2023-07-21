@@ -1,6 +1,6 @@
-# User Management System With Validat
+# User Management System 
 
-User Management System using validations is a Java application built using Maven and the SpringBoot framework.
+User Management System is a Java application built using Maven and the SpringBoot framework.
 
 ## Table of Contents
 
